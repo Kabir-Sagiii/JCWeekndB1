@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function fn() {
+        document.querySelector("h1").style.backgroundColor = "red";
+        document.querySelector("h1").style.color = "white";
+      }
+      function f1() {
+        document.querySelector("h1").style.backgroundColor = "black";
+        document.querySelector("h1").style.color = "red";
+      }
+    </script>
+    <style>
+      h1 {
+        background-color: black;
+        padding: 30px;
+        color: red;
+        text-align: center;
+      }
+      h3 {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 onmouseenter="fn()" onmouseleave="f1()">Welcome to Fullstack</h1>
+    <h2>Welcome to Fullstack</h2>
+    <h3>Welcome to Fullstack</h3>
+  </body>
+</html>
