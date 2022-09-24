@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        color: white;
+        text-align: center;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 50px 200px 50px;
+        width: 500px;
+        height: 300px;
+        margin: auto;
+      }
+      .box1 {
+        display: grid;
+        grid-template-columns: 500px;
+        grid-template-rows: 25px 25px;
+        background-color: rgb(17, 4, 4);
+      }
+      .box2 {
+        background-color: blueviolet;
+        display: grid;
+        grid-template-columns: 100px 400px;
+        grid-template-rows: 200px;
+      }
+      .box3 {
+        display: flex;
+        background-color: orange;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <div style="background-color: red">Red</div>
+        <div style="background-color: yellow">Yellow</div>
+      </div>
+      <div class="box2">
+        <div style="background-color: purple">Col 1</div>
+        <div style="background-color: orangered">Col 2</div>
+      </div>
+      <div class="box3">
+        <div style="background-color: lightgreen">Flex 1</div>
+        <div style="background-color: lightpink">Flex 2</div>
+      </div>
+    </div>
+  </body>
+</html>
