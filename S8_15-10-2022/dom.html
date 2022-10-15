@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        background-color: lightsalmon;
+      }
+      div {
+        background-color: white;
+        text-align: center;
+        width: 300px;
+        padding: 70px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+    <script>
+      function changeContent() {
+        // get the reference of html element or tag in the javascript
+        var h2Ref = document.getElementById("h2");
+        var pRef = document.getElementById("p1");
+
+        //update the content
+        h2Ref.innerText = "Hello Javascript";
+        pRef.innerText = "Javascript is fun to Learn";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2 id="h2">Welcome to HTML</h2>
+      <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+        dignissimos?
+      </p>
+      <button onclick="changeContent()">Change Content</button>
+    </div>
+  </body>
+</html>

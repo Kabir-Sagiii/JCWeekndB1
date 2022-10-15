@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        background-color: lightsalmon;
+      }
+      div {
+        background-color: white;
+        text-align: center;
+        width: 300px;
+        padding: 70px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+      }
+    </style>
+    <script>
+      function changeColor() {
+        var h2Rf = document.getElementById("h2");
+        var bodyRef = document.getElementById("body");
+
+        h2Rf.style.color = "red";
+        h2Rf.style.backgroundColor = "black";
+        h2Rf.style.padding = "20px";
+        h2Rf.style.borderRadius = "50px";
+
+        bodyRef.style.backgroundColor = "lightgreen";
+      }
+    </script>
+  </head>
+
+  <body id="body">
+    <div>
+      <h2 id="h2">Hello Javascript</h2>
+      <button onclick="changeColor()">Change Color</button>
+    </div>
+  </body>
+</html>

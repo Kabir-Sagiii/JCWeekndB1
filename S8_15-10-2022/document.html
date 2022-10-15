@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function printDocument() {
+        var obj1 = {
+          name: "Kabir",
+          id: 101,
+        };
+        // console.log(obj1);
+        // console.log(document);
+
+        for (var keys in document) {
+          //   console.log(keys);
+          document.write(keys);
+          document.write("<br>");
+          document.write("<br>");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <h2>Html Document</h2>
+      </div>
+
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nemo
+          quos minus suscipit doloribus dolores repudiandae dolorum asperiores
+          beatae, voluptatem deleniti quo vero eligendi delectus praesentium
+          reiciendis accusamus. Optio vitae, temporibus distinctio itaque nisi
+          aliquid consequatur deserunt delectus odit? Asperiores dicta facilis
+          assumenda neque, corporis quibusdam facere voluptates porro libero.
+          Nihil deserunt laudantium maxime iusto? Inventore labore explicabo
+          ullam earum doloremque esse excepturi odio, aut fugiat error debitis
+          dolore ut voluptates ducimus consequuntur rerum totam corporis saepe
+          nisi nemo nostrum quasi architecto nesciunt tempora? Totam quae quo
+          blanditiis architecto adipisci voluptate sapiente alias vitae
+          distinctio incidunt numquam esse, tempore ab error hic, vel nam, a
+          neque consectetur ut in dolore ratione soluta. Eum nobis doloremque
+          dolorem, quia beatae quod, sequi officia, iste ad delectus illo.
+          Quidem, accusantium optio corporis obcaecati, temporibus harum tempora
+          consequuntur veniam exercitationem eos voluptatum totam iste quas!
+          Error nulla, officiis nihil tenetur ab ducimus eveniet aperiam.
+        </p>
+      </div>
+      <ul>
+        <li>Iphone 14</li>
+        <li>Iphone 13</li>
+        <li>Iphone 11</li>
+        <li>Iphone 7+</li>
+        <li>Iphone 12</li>
+      </ul>
+      <button onclick="printDocument()">Print Document Object</button>
+    </div>
+  </body>
+</html>
