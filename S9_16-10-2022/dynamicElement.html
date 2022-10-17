@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function createPara() {
+        var inputRef = document.querySelector("#i1");
+        var pRef = document.createElement("p");
+        var imgRef = document.createElement("img");
+
+        pRef.innerText = inputRef.value;
+        imgRef.src = "https://wallpapercave.com/wp/wp2465927.jpg";
+        imgRef.width = "100";
+        imgRef.height = "100";
+        document.getElementById("body").appendChild(imgRef);
+        document.getElementById("body").appendChild(pRef);
+      }
+    </script>
+  </head>
+
+  <body id="body">
+    <div>
+      <input id="i1" type="text" placeholder="Enter Text" />
+      <button onclick="createPara()">Submit</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        /* background-color: lightsalmon; */
+      }
+      .Gfather {
+        border: 6px solid red;
+        padding: 30px;
+      }
+      .father {
+        border: 4px solid black;
+        padding: 30px;
+      }
+      .child {
+        border: 2px solid green;
+        padding: 30px;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function fn() {
+        alert("Button clicked");
+      }
+      function f1() {
+        alert("Child div clicked");
+      }
+      function f2() {
+        alert("Father div clicked");
+      }
+      function f3() {
+        alert("Grand Father div clicked");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="Gfather" onclick="f3()">
+      Grand Father
+      <div class="father" onclick="f2()">
+        Father
+        <div class="child" onclick="f1()">
+          Child
+          <button onclick="fn()">Click Me</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

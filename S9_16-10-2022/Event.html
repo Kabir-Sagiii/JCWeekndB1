@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+        /* background-color: lightgreen; */
+      }
+    </style>
+    <script>
+      function fn() {
+        document.getElementById("body").style.backgroundColor = "red";
+      }
+
+      function f1() {
+        document.getElementById("btn").style.backgroundColor = "green";
+        document.getElementById("btn").style.color = "white";
+        document.getElementById("btn").style.border = "none";
+      }
+      function f2() {
+        document.getElementById("btn").style.backgroundColor = "lightsalmon";
+      }
+      function f3() {
+        // setTimeout(function () {
+        //   document.getElementById("body").style.backgroundColor = "black";
+        // }, 5000);
+        // setInterval(() => {
+        //   if (
+        //     document.getElementById("body").style.backgroundColor ===
+        //     "lightgreen"
+        //   ) {
+        //     document.getElementById("body").style.backgroundColor =
+        //       "lightcoral";
+        //   } else {
+        //     document.getElementById("body").style.backgroundColor =
+        //       "lightgreen";
+        //   }
+        // }, 1000);
+      }
+    </script>
+  </head>
+  <body id="body" onload="f3()">
+    <button id="btn" onclick="fn()" onmouseenter="f1()" onmouseleave="f2()">
+      Click Me
+    </button>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function changePlaceholder() {
+        var inputRef = document.querySelector("#textInput");
+        inputRef.placeholder = "Enter Some Text";
+        inputRef.value = "Dummy Content Added";
+      }
+    </script>
+  </head>
+  <body>
+    <input type="text" placeholder="Enter Name" id="textInput" />
+    <button onclick="changePlaceholder()">Change Placeholder</button>
+  </body>
+</html>
