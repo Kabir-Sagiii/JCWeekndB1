@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fnAddEvent() {
+        alert("Added event dynamically to second button");
+        var btnRef = document.getElementById("btn2");
+        btnRef.addEventListener("click", function () {
+          //   alert("Second button is Called");
+          btnRef.style.backgroundColor = "lightgreen";
+          btnRef.style.color = "black";
+          btnRef.style.border = "none";
+          btnRef.style.padding = "10px";
+        });
+        btnRef.addEventListener("mouseenter", function () {
+          btnRef.style.backgroundColor = "orangered";
+          btnRef.style.color = "white";
+          btnRef.style.border = "none";
+          btnRef.style.padding = "10px";
+        });
+        btnRef.addEventListener("mouseleave", function () {
+          btnRef.style.backgroundColor = "black";
+          btnRef.style.color = "white";
+          btnRef.style.border = "none";
+          btnRef.style.padding = "30px";
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <button onclick="fnAddEvent()">Added Event</button>
+
+      <button id="btn2">Dynamically Added Event</button>
+    </div>
+  </body>
+</html>
