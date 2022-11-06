@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script>
+      var interval;
+      function changeImages() {
+        var imgRef = document.getElementById("img");
+        interval = setInterval(function () {
+          if (imgRef.name === "html") {
+            imgRef.src =
+              "https://1.bp.blogspot.com/-BqxPSTRnegw/Vat3INzTJBI/AAAAAAAAAcc/6YATQ_vXpN8/s1600/11.jpg";
+            imgRef.name = "css";
+          } else if (imgRef.name === "css") {
+            imgRef.src =
+              "https://www.bryntum.com/wp-content/uploads/2020/02/js-logo.png";
+            imgRef.name = "js";
+          } else if (imgRef.name === "js") {
+            imgRef.src =
+              "https://th.bing.com/th/id/OIP.33CwBYkmnMfpA9Djup22JwHaHa?pid=ImgDet&rs=1";
+            imgRef.name = "react";
+          } else {
+            imgRef.src =
+              "https://th.bing.com/th/id/R.7eaf51b1efbac224a826255f61b1e827?rik=JMPMIDInJXVErg&riu=http%3a%2f%2fwww.emagidla.com%2fwp-content%2fuploads%2f2013%2f10%2fhtml5.png&ehk=qIJZyOCy32GmZWiNV%2b3EOE3Tj29u1%2feU0WkK1nTJiqE%3d&risl=&pid=ImgRaw&r=0";
+            imgRef.name = "html";
+          }
+        }, 2000);
+      }
+
+      function stopInterval() {
+        clearInterval(interval);
+      }
+    </script>
+    <style>
+      .stop {
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body onload="changeImages()">
+    <div style="text-align: center; margin-top: 50px">
+      <img
+        id="img"
+        src="https://th.bing.com/th/id/R.7eaf51b1efbac224a826255f61b1e827?rik=JMPMIDInJXVErg&riu=http%3a%2f%2fwww.emagidla.com%2fwp-content%2fuploads%2f2013%2f10%2fhtml5.png&ehk=qIJZyOCy32GmZWiNV%2b3EOE3Tj29u1%2feU0WkK1nTJiqE%3d&risl=&pid=ImgRaw&r=0"
+        width="1200"
+        height="400"
+        name="html"
+      /><br />
+      <button class="btn btn-primary mt-2" onclick="changeImages()">
+        Start Interval
+      </button>
+      <button class="stop" onclick="stopInterval()">Stop Interval</button>
+    </div>
+  </body>
+</html>
