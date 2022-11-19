@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <script src="Ajax.js"></script> -->
+    <script src="Fetch.js"></script>
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      nav {
+        text-align: right;
+        background-color: black;
+        padding: 20px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        margin-right: 50px;
+      }
+      .container {
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Users</a>
+      <a href="#">ContactUs</a>
+      <a href="#">Login</a>
+    </nav>
+    <div class="container">
+      <h2>User Details</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        quam vitae modi repudiandae deleniti distinctio? Deserunt hic eaque
+        nobis sunt provident obcaecati iusto modi consequuntur placeat. Iusto
+        error maiores cum? Consequuntur voluptates nesciunt illo commodi
+        perferendis fugiat officia repellat, reprehenderit voluptatem, nulla sed
+        corporis consequatur ullam deleniti nisi obcaecati iure aspernatur
+        laudantium. Rem quae recusandae sequi aut, deserunt atque quam non
+        soluta cupiditate suscipit ipsum quibusdam deleniti amet repudiandae
+        reprehenderit saepe dolor? Culpa quis sed doloremque, quae quod aliquid
+        debitis aut. Quod natus similique quasi quas voluptatibus ipsam libero,
+        veniam nisi omnis deleniti repellat nostrum ratione a ut consequatur
+        unde? Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus quam vitae modi repudiandae deleniti distinctio? Deserunt hic
+        eaque nobis sunt provident obcaecati iusto modi consequuntur placeat.
+        Iusto error maiores cum? Consequuntur voluptates nesciunt illo commodi
+        perferendis fugiat officia repellat, reprehenderit voluptatem, nulla sed
+        corporis consequatur ullam deleniti nisi obcaecati iure aspernatur
+        laudantium. Rem quae recusandae sequi aut, deserunt atque quam non
+        soluta cupiditate suscipit ipsum quibusdam deleniti amet repudiandae
+        reprehenderit saepe dolor? Culpa quis sed doloremque, quae quod aliquid
+        debitis aut. Quod natus similique quasi quas voluptatibus ipsam libero,
+        veniam nisi omnis deleniti repellat nostrum ratione a ut consequatur
+        unde?
+      </p>
+      <button onclick="getUserDataUsingFetch()">Get User Data</button>
+    </div>
+
+    <div
+      style="margin-top: 50px; text-align: center; display: none"
+      id="tableDiv"
+    >
+      <table id="table" style="width: 1200px; margin: auto" cellpadding="10">
+        <tr style="background-color: black; color: white">
+          <th>IMAGE</th>
+          <th>NAME</th>
+          <th>GENDER</th>
+          <th>EMAIL</th>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
