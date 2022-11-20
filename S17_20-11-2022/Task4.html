@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 300px;
+        padding: 50px;
+        margin: 100px auto;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+      }
+    </style>
+    <script>
+      function checkData() {
+        var pRef = document.getElementById("p");
+        var inputData = document.getElementById("input").value;
+
+        var pattern = /^k/i;
+
+        if (pattern.test(inputData)) {
+          pRef.innerText = "Valid User";
+          pRef.style.color = "green";
+        } else {
+          pRef.innerText = "Invalid User";
+          pRef.style.color = "red";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Regular Expression</h2>
+      <input type="text" placeholder="Enter Username" id="input" />
+      <button onclick="checkData()">Submit</button>
+
+      <p id="p"></p>
+    </div>
+  </body>
+</html>
