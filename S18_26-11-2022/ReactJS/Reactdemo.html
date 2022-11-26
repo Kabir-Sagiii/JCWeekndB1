@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script>
+      function createh2() {
+        var h2Ref = document.createElement("h2");
+        h2Ref.innerText = "Hello Javascript";
+        document.getElementById("root").appendChild(h2Ref);
+      }
+      //Creating h2 with ReactJS
+      function createh2UsingReact() {
+        var h2Ref = React.createElement("h2", null, "Hello ReactJS");
+        //<h2>Hello ReactJS  </h2>  React Element
+
+        ReactDOM.render(h2Ref, document.getElementById("root"));
+      }
+    </script>
+  </head>
+  <body id="root" onload="createh2()">
+    <h2>Hello HTML</h2>
+
+    <button onclick="createh2UsingReact()">create h2 using React</button>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="div1"></div>
+
+    <script>
+      function createPara() {
+        var h1Ref = React.createElement(
+          "h1",
+          {
+            id: "hid",
+            style: {
+              color: "red",
+            },
+          },
+          "React JS"
+        ); //<h1 id:"hid">React JS </h1>
+
+        var pRef = React.createElement(
+          "p",
+          {
+            style: {
+              color: "green",
+              fontSize: "30px",
+            },
+          },
+          "React is used to create User Interface"
+        );
+
+        var divRef = React.createElement("div", null, [h1Ref, pRef]);
+        //<div><h1>ReactJS</h1><p> ------ </p>     </div>
+
+        ReactDOM.render(divRef, document.getElementById("div1"));
+      }
+      createPara();
+    </script>
+  </body>
+</html>
