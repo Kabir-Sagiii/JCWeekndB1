@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      function createUI() {
+        var h2Ref = React.createElement("h2", null, "React JS Library");
+        var pRef = React.createElement(
+          "p",
+          null,
+          "ReactJS is js Library which is used to create UI"
+        );
+
+        var childDiv1 = React.createElement("div", null, h2Ref);
+        var childDiv2 = React.createElement("div", null, pRef);
+
+        var divRef1 = React.createElement("div", null, [childDiv1, childDiv2]);
+
+        ReactDOM.render(divRef1, document.getElementById("root"));
+      }
+      createUI();
+    </script>
+  </body>
+</html>

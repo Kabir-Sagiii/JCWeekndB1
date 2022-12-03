@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function CreateCard(obj) {
+        var cardStyle = {
+          width: "300px",
+          padding: "30px",
+          textAlign: "center",
+          boxShadow: "0 0 10px black",
+          backgroundColor: obj.color,
+        };
+
+        return (
+          <div style={cardStyle}>
+            <img src={obj.img} width="100%" height="300" />
+            <h4> {obj.name} </h4>
+            <p>{obj.gender} </p>
+          </div>
+        );
+      }
+
+      function FnMain() {
+        var containerStyle = {
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr",
+        };
+
+        var container = (
+          <div style={containerStyle}>
+            <CreateCard
+              img="https://th.bing.com/th/id/OIP.9Nr-W1-pxSrgdwDTqrpwEgHaLG?pid=ImgDet&rs=1"
+              name="Rahul Arora"
+              gender="Male"
+              color="lightpink"
+            />
+            <CreateCard
+              img="https://www.nafisflahi.com/wp-content/uploads/2013/10/ceo5.jpg"
+              name="Riya Verma"
+              gender="Female"
+              color="lightgreen"
+            />
+            <CreateCard
+              img="https://th.bing.com/th/id/OIP.dpxmbtPxrw4mBtdWaxfTEwAAAA?pid=ImgDet&rs=1"
+              name="Sneha Sharma"
+              gender="Female"
+              color="lightcoral"
+            />
+          </div>
+        );
+        ReactDOM.render(container, document.getElementById("root"));
+      }
+      FnMain();
+    </script>
+  </body>
+</html>

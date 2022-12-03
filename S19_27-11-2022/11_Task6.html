@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Header() {
+        var navStyle = {
+          backgroundColor: "black",
+          textAlign: "right",
+          padding: "25px",
+        };
+
+        var aStyle = {
+          color: "white",
+          textDecoration: "none",
+          marginRight: "50px",
+        };
+
+        return (
+          <nav style={navStyle}>
+            <a style={aStyle} href="">
+              Home
+            </a>
+            <a style={aStyle} href="">
+              Profile
+            </a>
+            <a style={aStyle} href="">
+              Services
+            </a>
+            <a style={aStyle} href="">
+              Contact Us
+            </a>
+          </nav>
+        );
+      }
+
+      function Main(obj) {
+        var cardStyle = {
+          width: "300px",
+          padding: "30px",
+          textAlign: "center",
+          boxShadow: "0 0 10px black",
+          backgroundColor: obj.color,
+        };
+
+        return (
+          <div style={cardStyle}>
+            <img src={obj.img} width="100%" height="300" />
+            <h4> {obj.name} </h4>
+            <p>{obj.gender} </p>
+          </div>
+        );
+      }
+
+      function Footer() {
+        return (
+          <div
+            style={{
+              marginTop: "50px",
+              backgroundColor: "black",
+              padding: "50px",
+              textAlign: "center",
+            }}
+          >
+            <p style={{ color: "white" }}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              dolore ut atque nisi corporis accusamus. Fugiat earum nostrum
+              reiciendis animi sit corrupti culpa porro veniam vero nemo eius
+              repudiandae aliquam tempore natus deleniti maiores iste qui
+              nesciunt, minima sunt similique eum possimus. Veritatis tempore
+              blanditiis, maiores possimus illum commodi. Obcaecati!
+            </p>
+            <h4 style={{ color: "white" }}>
+              All CopyRight &copy; are Reserved by Kabir{" "}
+            </h4>
+          </div>
+        );
+      }
+
+      function App() {
+        var Container = (
+          <div>
+            <Header />
+            <div
+              style={{
+                marginTop: "50px",
+                display: "flex",
+                justifyContent: "space-evenly",
+              }}
+            >
+              <Main
+                img="https://th.bing.com/th/id/OIP.9Nr-W1-pxSrgdwDTqrpwEgHaLG?pid=ImgDet&rs=1"
+                name="Rahul Arora"
+                gender="Male"
+                color="lightpink"
+              />
+              <Main
+                img="https://www.nafisflahi.com/wp-content/uploads/2013/10/ceo5.jpg"
+                name="Riya Verma"
+                gender="Female"
+                color="lightgreen"
+              />
+              <Main
+                img="https://th.bing.com/th/id/OIP.dpxmbtPxrw4mBtdWaxfTEwAAAA?pid=ImgDet&rs=1"
+                name="Sneha Sharma"
+                gender="Female"
+                color="lightcoral"
+              />
+            </div>
+            <Footer />
+          </div>
+        );
+
+        ReactDOM.render(Container, document.getElementById("root"));
+      }
+
+      App();
+    </script>
+  </body>
+</html>

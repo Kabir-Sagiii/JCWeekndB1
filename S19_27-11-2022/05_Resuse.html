@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createImageDiv() {
+        var divStyle = {
+          width: "400px",
+          margin: "auto",
+          padding: "50px",
+          textAlign: "center",
+          boxShadow: "0 0 10px black",
+        };
+
+        let UI = (
+          <div style={divStyle}>
+            <img
+              src="https://th.bing.com/th/id/OIP.joMge5QtSa2uW-6PeanhCwHaJU?pid=ImgDet&rs=1"
+              width="250"
+              height="250"
+            />
+          </div>
+        );
+
+        var reuseUI = (
+          <div>
+            {UI}
+            {UI}
+            {UI}
+          </div>
+        );
+
+        ReactDOM.render(reuseUI, document.getElementById("root"));
+      }
+      createImageDiv();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+.profile{
+    
+    text-align: left;
+    width: 1000px;
+    height: 400px;
+    box-shadow: 0 0 10px black;
+    margin: 50px auto;
+  
+    display: flex;
+}

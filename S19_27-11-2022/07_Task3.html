@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #container {
+        padding: 50px;
+        width: 800px;
+        box-shadow: 0 0 10px black;
+        margin: auto;
+        background-color: lightgreen;
+      }
+    </style>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createDiv() {
+        var divRef = (
+          <div id="container">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+            soluta dolore et sed exercitationem neque pariatur ipsa at. Adipisci
+            mollitia ex cum excepturi quo porro repudiandae beatae fugiat. Quod
+            veniam earum laboriosam odit repudiandae sit ad nihil corporis
+            minus. Error aliquam nisi natus consectetur quas nihil, animi ad
+            modi! Quam esse facere similique harum tempore vel sint error sequi,
+            velit ipsum sit perferendis. Minima assumenda ipsum est aliquid et
+            blanditiis rem temporibus, eius, esse sapiente veniam illum expedita
+            a quos eum veritatis deserunt ex quas voluptatem itaque delectus
+            consequuntur! Nemo veniam autem nisi dolorem error officiis minus
+            enim quam distinctio.
+          </div>
+        );
+
+        return divRef;
+      }
+
+      function fnMain() {
+        var repeatDiv = (
+          <div>
+            {" "}
+            {createDiv()} {createDiv()} {createDiv()}{" "}
+          </div>
+        );
+
+        ReactDOM.render(repeatDiv, document.getElementById("root"));
+      }
+      fnMain();
+    </script>
+  </body>
+</html>

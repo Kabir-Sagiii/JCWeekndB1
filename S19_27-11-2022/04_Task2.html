@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function createImageDiv() {
+        var divStyle = {
+          width: "400px",
+          margin: "auto",
+          padding: "50px",
+          textAlign: "center",
+          boxShadow: "0 0 10px black",
+        };
+
+        let UI = (
+          <>
+            <div style={divStyle}>
+              <img
+                src="https://th.bing.com/th/id/OIP.joMge5QtSa2uW-6PeanhCwHaJU?pid=ImgDet&rs=1"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div style={divStyle}>
+              <img
+                src="https://th.bing.com/th/id/R.73ae7383d0349fdb7f65509da8e102c8?rik=Cg9zWlP1COi5yw&riu=http%3a%2f%2fwww.cellularcountry.com%2fimages%2fApple_iPhone_5S_16GB_Gold_4G_LTE_Smart_Phone_TMobile_35578_02.jpg&ehk=l6PRpzahRlQ%2bWVmJrhRPIqN6unhoHWmC6QB7ngAlz78%3d&risl=&pid=ImgRaw&r=0"
+                width="300"
+                height="300"
+              />
+            </div>
+            <div style={divStyle}>
+              <img
+                src="https://th.bing.com/th/id/OIP.joMge5QtSa2uW-6PeanhCwHaJU?pid=ImgDet&rs=1"
+                width="300"
+                height="300"
+              />
+            </div>
+          </>
+        );
+        ReactDOM.render(UI, document.getElementById("root"));
+      }
+      createImageDiv();
+    </script>
+  </body>
+</html>
