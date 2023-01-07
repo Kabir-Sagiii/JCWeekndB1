@@ -1,0 +1,38 @@
+{
+    "data":[
+        {"id":1,
+        "title":"P1",
+        "price":109.95,
+        "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday","category":"men's clothing",
+        "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+        {
+            "id":2,
+        "title":"P2",
+        "price":1099.95,
+        "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday","category":"men's clothing",
+        "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        },
+        {
+            "id":3,
+        "title":"P3",
+        "price":509.95,
+        "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday","category":"men's clothing",
+        "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        },
+        {
+            "id":4,
+        "title":"P4",
+        "price":209.95,
+        "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday","category":"men's clothing",
+        "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        },
+        {
+            "id":5,
+        "title":"P5",
+        "price":809.95,
+        "description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday","category":"men's clothing",
+        "image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+        }
+    ]
+}

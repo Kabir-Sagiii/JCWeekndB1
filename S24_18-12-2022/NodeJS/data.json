@@ -1,0 +1,21 @@
+ {
+ "results": [
+    {
+     "name": "S1",
+      "city": "London",
+      "email":"s1@gmail.com"
+    },
+    {
+     "name": "S2",
+      "city": "Delhi"
+    },
+    {
+      "name": "S3",
+      "city": "NY"
+    }
+  ],
+  "info": {
+    "name": "JSON data",
+    "content": "USer Informations"
+  }
+}

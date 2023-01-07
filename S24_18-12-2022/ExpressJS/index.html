@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getdata() {
+        fetch("http://localhost:3006/json")
+          .then((res) => {
+            return res.json();
+          })
+          .then((data) => {
+            console.log(data);
+            var ol = document.createElement("ol");
+            data.info.map((ele) => {
+              var li = document.createElement("li");
+              li.innerText = ele.name;
+              ol.appendChild(li);
+              document.getElementById("root").appendChild(ol);
+            });
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>User Data</h2>
+    <button onclick="getdata()">Send Request</button>
+    <div id="root"></div>
+  </body>
+</html>
