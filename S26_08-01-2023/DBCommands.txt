@@ -1,0 +1,72 @@
+How to connect with the Cloud database ? 
+  mongosh "mongodb+srv://cluster0.poayja3.mongodb.net/<database name>" --apiVersion 1 --username <user name>
+
+How to connect with local database ? 
+  mongosh 
+
+How to check the version of db or database got installed or not ?
+  mongod --version
+
+How to list out all the collections in the database 
+  show collections
+
+How to List out all the dbs?
+ show dbs
+
+ How to switch from one database to another database 
+ use <database name>
+
+ How to create new database 
+  use <database name>
+
+  How to createCollection ?
+   db.createCollection('<collection name>')
+
+How to insert One Document inside the Collection ?
+ db.<collection name>.insertOne({name:"Trimmer",brand:"HP",rating:4.5,price:1000})
+
+ How to insert Many Document inside the Collection ?
+ db.<collection name>.insertMany([{},{},{},{}])
+
+ How to read or access all the documents 
+ db.<collection name>.find()
+
+  How to read or access Multiple the documents 
+ db.<collection name>.find({key:value})
+
+ How to read or access Specific the documents 
+ db.<collection name>.find({_id:ObjectId('<id value>')})
+                    or
+db.<collection name>.findById({_id:ObjectId('<id value>')})
+
+How to delete any document 
+  db.<collection name>.deleteOne({_id:Object('<id value>)})
+
+How to delete multiple document at same time ?
+
+
+How to One Update document ?
+ db.<collection name>.updateOne({<key>:<value>},{$set:{<key>:<value>}})
+
+ How to Add new Field in One Update document ?
+ db.<collection name>.updateOne({<key>:<value>},{$set:{<key>:<value>}})
+
+ How to Update Multiple Documents at a time ?
+
+ How to knoe no. of document in collection ?
+ db.<collection name>.countDocuments()
+
+ How to access first few documents from collection ?
+ db.<collection name>.find().limit(<no of documents>)
+
+ How to sort documents in Asc or Des Order
+ db.<collection name>.find().sort({rating:1 or -1})
+ 1 = asc 
+ -1 = desc
+
+
+
+
+
+
+
